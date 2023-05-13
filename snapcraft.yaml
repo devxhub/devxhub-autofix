@@ -1,0 +1,25 @@
+name: devxhub
+version: stable
+version-script: git -C parts/devxhub/build describe --abbrev=0 --tags
+summary: Magnificent app which corrects your previous console command.
+description: |
+    The Dxh tries to match a rule for the previous command,
+    creates a new command using the matched rule and runs it.
+
+grade: stable
+confinement: classic
+
+apps:
+    devxhub:
+        command: bin/devxhub
+        environment:
+            PYTHONIOENCODING: utf-8
+    dxh:
+        command: bin/dxh
+        environment:
+            PYTHONIOENCODING: utf-8
+
+parts:
+    devxhub:
+        source: https://github.com/devxhubcom/devxhub-autofix.git
+        plugin: python
