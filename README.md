@@ -162,7 +162,7 @@ It is recommended that you place this command in your `.bash_profile`,
 ```bash
 eval $(devxhub --alias)
 # You can use whatever you want as an alias, like for Mondays:
-eval $(devxhub --alias DXH)
+eval $(devxhub --alias dxh)
 ```
 
 [Or in your shell config (Bash, Zsh, Fish, Powershell, tcsh).](https://github.com/devxhubcom/devxhub-autofix/wiki/Shell-aliases)
@@ -563,7 +563,6 @@ Project License can be found [here](LICENSE.md).
 [workflow-badge]: https://github.com/devxhubcom/devxhub-autofix/workflows/Tests/badge.svg
 [workflow-link]: https://github.com/devxhubcom/devxhub-autofix/actions?query=workflow%3ATests
 [coverage-badge]: https://img.shields.io/coveralls/devxhubcom/devxhub-autofix.svg
-
 [license-badge]: https://img.shields.io/badge/license-MIT-007EC7.svg
 [homebrew]: https://brew.sh/
 
