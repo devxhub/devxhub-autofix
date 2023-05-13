@@ -7,7 +7,7 @@ from devxhub.types import Command
 output = "Unrecognized command '{}'".format
 
 stdout = b'''
-Scanning 615 folders for symlinks in /home/nvbn/work/zcho/BookkaWebView/node_modules (6ms)
+Scanning 615 folders for symlinks in /home/devxhubcom/work/zcho/BookkaWebView/node_modules (6ms)
 
   Usage: react-native [options] [command]
 

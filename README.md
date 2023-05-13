@@ -1,6 +1,7 @@
 ### Collected and modified from [Click here](https://github.com/nvbn/thefuck)
 
-# The DEVXHUB [![Version][version-badge]][version-link] [![Build Status][workflow-badge]][workflow-link] [![Coverage][coverage-badge]][coverage-link] [![MIT License][license-badge]](LICENSE.md)
+
+# The DEVXHUB [![Version][version-badge]][version-link] [![Build Status][workflow-badge]][workflow-link] [![MIT License][license-badge]](LICENSE.md)
 
 _The Devxhub_ is a magnificent app, inspired by Dev,
 that corrects errors in previous console commands.
@@ -18,7 +19,7 @@ E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
 
 ➜ dxh
 sudo apt-get install vim [enter/↑/↓/ctrl+c]
-[sudo] password for nvbn:
+[sudo] password for devxhubcom:
 Reading package lists... Done
 ...
 ```
@@ -86,7 +87,7 @@ E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
 
 ➜ dxh
 sudo apt-get install vim
-[sudo] password for nvbn:
+[sudo] password for devxhubcom:
 Reading package lists... Done
 ...
 ```
@@ -161,7 +162,7 @@ It is recommended that you place this command in your `.bash_profile`,
 ```bash
 eval $(devxhub --alias)
 # You can use whatever you want as an alias, like for Mondays:
-eval $(devxhub --alias DXH)
+eval $(devxhub --alias dxh)
 ```
 
 [Or in your shell config (Bash, Zsh, Fish, Powershell, tcsh).](https://github.com/devxhubcom/devxhub-autofix/wiki/Shell-aliases)
@@ -434,9 +435,9 @@ priority = 1000  # Lower first, default is 1000
 requires_output = True
 ```
 
-[More examples of rules](https://github.com/devxhubcom/devxhub-autofix/tree/master/devxhub/rules),
-[utility functions for rules](https://github.com/devxhubcom/devxhub-autofix/tree/master/devxhub/utils.py),
-[app/os-specific helpers](https://github.com/devxhubcom/devxhub-autofix/tree/master/devxhub/specific/).
+[More examples of rules](https://github.com/devxhubcom/devxhub-autofix/tree/main/devxhub/rules),
+[utility functions for rules](https://github.com/devxhubcom/devxhub-autofix/tree/main/devxhub/utils.py),
+[app/os-specific helpers](https://github.com/devxhubcom/devxhub-autofix/tree/main/devxhub/specific/).
 
 ##### [Back to Contents](#contents)
 
@@ -562,7 +563,6 @@ Project License can be found [here](LICENSE.md).
 [workflow-badge]: https://github.com/devxhubcom/devxhub-autofix/workflows/Tests/badge.svg
 [workflow-link]: https://github.com/devxhubcom/devxhub-autofix/actions?query=workflow%3ATests
 [coverage-badge]: https://img.shields.io/coveralls/devxhubcom/devxhub-autofix.svg
-[coverage-link]: https://coveralls.io/github/devxhubcom/devxhub-autofix
 [license-badge]: https://img.shields.io/badge/license-MIT-007EC7.svg
 [homebrew]: https://brew.sh/
 

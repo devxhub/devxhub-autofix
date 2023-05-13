@@ -13,12 +13,12 @@ valid_urls = [
 invalid_urls = [
     '',  # No command
     'notacommand',  # Command not found
-    'ssh git@github.com:nvbn/thefrick.git',  # ssh command, not a git clone
+    'ssh git@github.com:devxhubcom/thefrick.git',  # ssh command, not a git clone
     'git clone foo',  # Valid clone
     'git clone https://github.com/devxhubcom/devxhub-autofix.git',  # Full command
     'github.com/devxhubcom/devxhub-autofix.git',  # Missing protocol
     'github.com:devxhubcom/devxhub-autofix.git',  # SSH missing username
-    'git clone git clone ssh://git@github.com:nvbn/thefrick.git',  # 2x clone
+    'git clone git clone ssh://git@github.com:devxhubcom/thefrick.git',  # 2x clone
     'https:/github.com/devxhubcom/devxhub-autofix.git'  # Bad protocol
 ]
 outputs = [
