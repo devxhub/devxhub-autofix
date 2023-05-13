@@ -1,4 +1,4 @@
-## Collected and modified from https://github.com/nvbn/thefuck
+### Collected and modified from [Click here](https://github.com/nvbn/thefuck)
 
 # The DEVXHUB [![Version][version-badge]][version-link] [![Build Status][workflow-badge]][workflow-link] [![Coverage][coverage-badge]][coverage-link] [![MIT License][license-badge]](LICENSE.md)
 
