@@ -13,7 +13,7 @@ def get_actual_scm_mock(mocker):
     ('git log', 'fatal: Not a git repository '
                 '(or any of the parent directories): .git',
      'hg'),
-    ('hg log', "abort: no repository found in '/home/nvbn/exp/devxhub' "
+    ('hg log', "abort: no repository found in '/home/devxhubcom/exp/devxhub' "
                "(.hg not found)!",
      'git')])
 def test_match(get_actual_scm_mock, script, output, actual_scm):
@@ -26,10 +26,10 @@ def test_match(get_actual_scm_mock, script, output, actual_scm):
     ('git log', 'fatal: Not a git repository '
                 '(or any of the parent directories): .git',
      None),
-    ('hg log', "abort: no repository found in '/home/nvbn/exp/devxhub' "
+    ('hg log', "abort: no repository found in '/home/devxhubcom/exp/devxhub' "
                "(.hg not found)!",
      None),
-    ('not-scm log', "abort: no repository found in '/home/nvbn/exp/devxhub' "
+    ('not-scm log', "abort: no repository found in '/home/devxhubcom/exp/devxhub' "
                     "(.hg not found)!",
      'git')])
 def test_not_match(get_actual_scm_mock, script, output, actual_scm):

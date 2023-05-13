@@ -3,10 +3,10 @@
 The DEVXHUB |Version| |Build Status| |Coverage| |MIT License|
 =============================================================
 
-*The Dxh* is a magnificent app, inspired by Dev, that corrects errors in
+*The DEVxHUB* is a magnificent app, inspired by Dev, that corrects errors in
 previous console commands.
 
-Is *The Dxh* too slow? `Try the experimental instant
+Is *The DEVxHUB* too slow? `Try the experimental instant
 mode! <#experimental-instant-mode>`__
 
 [[gif with examples][examples-link]][examples-link]
@@ -21,7 +21,7 @@ More examples:
 
    ➜ dxh
    sudo apt-get install vim [enter/↑/↓/ctrl+c]
-   [sudo] password for nvbn:
+   [sudo] password for devxhubcom:
    Reading package lists... Done
    ...
 
@@ -90,7 +90,7 @@ disabled:
 
    ➜ dxh
    sudo apt-get install vim
-   [sudo] password for nvbn:
+   [sudo] password for devxhubcom:
    Reading package lists... Done
    ...
 
@@ -173,7 +173,7 @@ Arch). <https://github.com/devxhubcom/devxhub-autofix/wiki/Installation>`__
 
    eval $(devxhub --alias)
    # You can use whatever you want as an alias, like for Mondays:
-   eval $(devxhub --alias DXH)
+   eval $(devxhub --alias dxh)
 
 `Or in your shell config (Bash, Zsh, Fish, Powershell,
 tcsh). <https://github.com/devxhubcom/devxhub-autofix/wiki/Shell-aliases>`__
@@ -577,11 +577,11 @@ A simple example rule for running a script with ``sudo``:
    requires_output = True
 
 `More examples of
-rules <https://github.com/devxhubcom/devxhub-autofix/tree/master/devxhub/rules>`__,
+rules <https://github.com/devxhubcom/devxhub-autofix/tree/main/devxhub/rules>`__,
 `utility functions for
-rules <https://github.com/devxhubcom/devxhub-autofix/tree/master/devxhub/utils.py>`__,
+rules <https://github.com/devxhubcom/devxhub-autofix/tree/main/devxhub/utils.py>`__,
 `app/os-specific
-helpers <https://github.com/devxhubcom/devxhub-autofix/tree/master/devxhub/specific/>`__.
+helpers <https://github.com/devxhubcom/devxhub-autofix/tree/main/devxhub/specific/>`__.
 
 .. _back-to-contents-4:
 

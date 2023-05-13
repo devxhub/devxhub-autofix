@@ -24,7 +24,7 @@ npm help <term>  search for help on <term>
 npm help npm     involved overview
 
 Specify configs in the ini-formatted file:
-    /home/nvbn/.npmrc
+    /home/devxhubcom/.npmrc
 or on the command line via: npm <command> --key value
 Config info can be viewed via: npm help config
 

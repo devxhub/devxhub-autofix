@@ -38,11 +38,11 @@ To /tmp/bar
 
 @pytest.mark.parametrize('command', [
     Command('git push', git_err),
-    Command('git push nvbn', git_err),
-    Command('git push nvbn master', git_err),
+    Command('git push devxhubcom', git_err),
+    Command('git push devxhubcom master', git_err),
     Command('git push', git_err2),
-    Command('git push nvbn', git_err2),
-    Command('git push nvbn master', git_err2)])
+    Command('git push devxhubcom', git_err2),
+    Command('git push devxhubcom master', git_err2)])
 def test_match(command):
     assert match(command)
 
@@ -50,24 +50,24 @@ def test_match(command):
 @pytest.mark.parametrize('command', [
     Command('git push', git_ok),
     Command('git push', git_uptodate),
-    Command('git push nvbn', git_ok),
-    Command('git push nvbn master', git_uptodate),
-    Command('git push nvbn', git_ok),
-    Command('git push nvbn master', git_uptodate)])
+    Command('git push devxhubcom', git_ok),
+    Command('git push devxhubcom master', git_uptodate),
+    Command('git push devxhubcom', git_ok),
+    Command('git push devxhubcom master', git_uptodate)])
 def test_not_match(command):
     assert not match(command)
 
 
 @pytest.mark.parametrize('command, output', [
     (Command('git push', git_err), 'git pull && git push'),
-    (Command('git push nvbn', git_err),
-     'git pull nvbn && git push nvbn'),
-    (Command('git push nvbn master', git_err),
-     'git pull nvbn master && git push nvbn master'),
+    (Command('git push devxhubcom', git_err),
+     'git pull devxhubcom && git push devxhubcom'),
+    (Command('git push devxhubcom master', git_err),
+     'git pull devxhubcom master && git push devxhubcom master'),
     (Command('git push', git_err2), 'git pull && git push'),
-    (Command('git push nvbn', git_err2),
-     'git pull nvbn && git push nvbn'),
-    (Command('git push nvbn master', git_err2),
-     'git pull nvbn master && git push nvbn master')])
+    (Command('git push devxhubcom', git_err2),
+     'git pull devxhubcom && git push devxhubcom'),
+    (Command('git push devxhubcom master', git_err2),
+     'git pull devxhubcom master && git push devxhubcom master')])
 def test_get_new_command(command, output):
     assert get_new_command(command) == output

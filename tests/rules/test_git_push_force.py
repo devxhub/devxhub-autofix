@@ -27,8 +27,8 @@ To /tmp/bar
 
 @pytest.mark.parametrize('command', [
     Command('git push', git_err),
-    Command('git push nvbn', git_err),
-    Command('git push nvbn master', git_err)])
+    Command('git push devxhubcom', git_err),
+    Command('git push devxhubcom master', git_err)])
 def test_match(command):
     assert match(command)
 
@@ -36,17 +36,17 @@ def test_match(command):
 @pytest.mark.parametrize('command', [
     Command('git push', git_ok),
     Command('git push', git_uptodate),
-    Command('git push nvbn', git_ok),
-    Command('git push nvbn master', git_uptodate),
-    Command('git push nvbn', git_ok),
-    Command('git push nvbn master', git_uptodate)])
+    Command('git push devxhubcom', git_ok),
+    Command('git push devxhubcom master', git_uptodate),
+    Command('git push devxhubcom', git_ok),
+    Command('git push devxhubcom master', git_uptodate)])
 def test_not_match(command):
     assert not match(command)
 
 
 @pytest.mark.parametrize('command, output', [
     (Command('git push', git_err), 'git push --force-with-lease'),
-    (Command('git push nvbn', git_err), 'git push --force-with-lease nvbn'),
-    (Command('git push nvbn master', git_err), 'git push --force-with-lease nvbn master')])
+    (Command('git push devxhubcom', git_err), 'git push --force-with-lease devxhubcom'),
+    (Command('git push devxhubcom master', git_err), 'git push --force-with-lease devxhubcom master')])
 def test_get_new_command(command, output):
     assert get_new_command(command) == output

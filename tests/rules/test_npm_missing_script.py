@@ -15,7 +15,7 @@ npm ERR! If you need help, you may report this error at:
 npm ERR!     <https://github.com/npm/npm/issues>
 
 npm ERR! Please include the following file with any support request:
-npm ERR!     /home/nvbn/exp/code_view/client_web/npm-debug.log
+npm ERR!     /home/devxhubcom/exp/code_view/client_web/npm-debug.log
 '''.format
 
 run_script_stdout = b'''
