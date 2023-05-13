@@ -2,10 +2,10 @@
 
 # The DEVXHUB [![Version][version-badge]][version-link] [![Build Status][workflow-badge]][workflow-link] [![Coverage][coverage-badge]][coverage-link] [![MIT License][license-badge]](LICENSE.md)
 
-_The Dxh_ is a magnificent app, inspired by Dev,
+_The Devxhub_ is a magnificent app, inspired by Dev,
 that corrects errors in previous console commands.
 
-Is _The Dxh_ too slow? [Try the experimental instant mode!](#experimental-instant-mode)
+Is _The Devxhub_ too slow? [Try the experimental instant mode!](#experimental-instant-mode)
 
 [![gif with examples][examples-link]][examples-link]
 
